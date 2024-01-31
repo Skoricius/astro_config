@@ -12,9 +12,16 @@ return {
   "catppuccin/nvim",
   {
     "ggandor/leap.nvim",
-    lazy=false,
+    lazy=true,
     config = function()
         require('leap').add_default_mappings()
+    end,
+  },
+  {
+    "kdheepak/lazygit.nvim",
+    lazy=true,
+    config = function()
+        require('nvim-lua/plenary.nvim')
     end,
   }
 }
