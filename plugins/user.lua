@@ -12,7 +12,7 @@ return {
   "catppuccin/nvim",
   {
     "ggandor/leap.nvim",
-    lazy=true,
+    lazy=false,
     config = function()
         require('leap').add_default_mappings()
     end,
